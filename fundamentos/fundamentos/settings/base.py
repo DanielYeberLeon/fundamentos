@@ -1,7 +1,6 @@
-
 from unipath import Path
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).ancestor(3)
+
 SECRET_KEY = '443$1*kwlguixh+u%c1ibihx^&=higgp!st($w_fzk12ayhc)='
 
 INSTALLED_APPS = [
@@ -11,7 +10,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.main',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -24,8 +25,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'fundamentos.urls'
-
-
 
 TEMPLATES = [
     {
@@ -61,7 +60,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
